@@ -1,0 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro";
+import IuaranForm from "../components/IuaranForm.svelte";
+
+// const mode = Astro.url.searchParams.get('mode')! || '';
+
+---
+
+<Layout title="Iuran" backURL="/">
+  <IuaranForm client:idle />
+</Layout>

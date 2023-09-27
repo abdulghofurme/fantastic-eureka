@@ -1,0 +1,25 @@
+---
+export interface Props {
+  title?: string;
+  backURL?: string;
+  backFunction?: () => void;
+}
+
+let { title = "", backURL, backFunction } = Astro.props;
+---
+
+{
+  title !== "Home" && (
+    <header class="h-16 flex items-center justify-between">
+      <a
+        href={backURL}
+        onclick={backFunction}
+        type="button"
+        class="w-6 h-6 mr-8"
+      >
+        <span class="material-symbols-rounded text-gray-500">arrow_back</span>
+      </a>
+      <h1 class="w-full mkr_ty-heading-l text-gray-700">{title}</h1>
+    </header>
+  )
+}
