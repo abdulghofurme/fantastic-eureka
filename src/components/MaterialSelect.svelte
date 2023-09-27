@@ -50,11 +50,4 @@
   select:focus + label {
     @apply text-teal-500;
   }
-
-  div.state-error input {
-    @apply !border-red-800;
-  }
-  div.state-error label {
-    @apply !text-red-800;
-  }
 </style>
