@@ -36,7 +36,7 @@
     -moz-appearance: none; /* Firefox */
     -webkit-appearance: none; /* Safari and Chrome */
     appearance: none;
-    @apply h-full w-full outline-none border border-[#0000003b] rounded-lg px-4 transition-all;
+    @apply h-full w-full outline-none border border-[#0000003b] rounded-lg px-4 transition-all bg-white;
     @apply mkr_ty-text-s text-gray-500;
     @apply focus:border-2 focus:border-teal-500 focus:placeholder:text-gray-300;
   }
